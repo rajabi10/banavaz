@@ -1,0 +1,32 @@
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+}
+
+/* linear-gradient(243.02deg, #10A9DA -9.92%, #92E5FF 106.28%) */
+/* background: linear-gradient(97.01deg, #53B9D9 -6.41%, rgba(20, 77, 101, 0) 110.43%); */
+
+/* root variables */
+:root {
+  --color-primary: #53b9d9;
+  --color-secondary-light: #fff6f2;
+  --color-secondary-dark: #0e5d80;
+  --color-homepage-first-gradient: #10a9da;
+  --color-homepage-second-gradient: #92e5ff;
+  --color-middle-homepage: #F6F6F6;
+  --color-third-homepage: #7EDCF9;
+  --color-first-footer: #53B9D9;
+  --color-second-footer: #144d65;
+  --color-headings: #0E5D80;
+  --color-text: #5B5B5B;
+  --color-body: #FFFFFF;
+}
+
+html {
+  font-size: 62.5%;
+}
