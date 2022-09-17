@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Vazir";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../assets/fonts/Vazir.woff") format("woff");
+  }
+@font-face {
+    font-family: "Vazir-Light";
+    font-weight: 300;
+    font-style: normal;
+    src: url("../assets/fonts/Vazir-Light.woff") format("woff");
+  }
+@font-face {
+    font-family: "Vazir-Medium";
+    font-weight: 500;
+    font-style: normal;
+    src: url("../assets/fonts/Vazir-Medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Vazir-Bold";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../assets/fonts/Vazir-Bold.woff") format("woff");
+  }
+  
+  body,
+  button {
+    font-family: "Vazir";
+  }
+  
