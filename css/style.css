@@ -8,7 +8,6 @@
   /* list-style: none; */
 }
 
-/* linear-gradient(243.02deg, #10A9DA -9.92%, #92E5FF 106.28%) */
 /* background: linear-gradient(97.01deg, #53B9D9 -6.41%, rgba(20, 77, 101, 0) 110.43%); */
 
 /* root variables */
@@ -52,6 +51,12 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+/* container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 /* Button */
 .btn {
   outline: 0;
@@ -61,7 +66,7 @@ h2 {
   cursor: pointer;
   white-space: nowrap;
   margin: 1rem 0;
-  font-size: 1.5.rem;
+  font-size: 1.5rem;
   font-family: "Vazir-Medium";
 }
 
@@ -120,14 +125,21 @@ h2 {
   box-shadow: 2px 5px 10px -4px rgb(132, 132, 132);
 }
 
+@media screen and (min-width: 1024px) {
+  .icon-container {
+    width: 90px;
+    height: 90px;
+  }
+}
+
 /* Hero section */
 .hero-section {
   width: 100%;
-  height: 200vh;
-  background-color: var(--color-primary);
+  height: 100%;
+  background: linear-gradient(243.02deg, #10a9da -9.92%, #92e5ff 150.28%);
 }
 
-.hero-section h1 {
+.hero__title h1 {
   font-size: 3.2rem;
   margin-bottom: 1rem;
 }
@@ -139,13 +151,16 @@ h2 {
   text-align: justify;
 }
 
-.hero-section button {
+.hero__title button {
   font-size: 1.5rem;
 }
 
 .hero-section .banner-img {
-  width: 100%;
-  height: 500px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  height: 300px;
 }
 
 .hero-section .features {
@@ -158,15 +173,151 @@ h2 {
   margin-top: 5rem;
 }
 
-
-.hero-section .feature__detail{
+.hero-section .feature__detail {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hero-section .feature__detail span:last-child{
+.hero-section .feature__detail span:last-child {
   color: var(--color-headings);
   font-size: 1.5rem;
   margin-top: 1rem;
+}
+
+.hero__management {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20rem;
+}
+
+.hero__management .management {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3rem;
+  width: 300px;
+}
+
+.management__title p {
+  width: 400px;
+  text-align: center;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.hero__management h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section p {
+  text-align: center;
+  color: var(--color-headings);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-section {
+    width: 100%;
+  }
+  .hero__wraper {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero__title h1 {
+    margin-bottom: 2rem;
+    font-size: 6rem;
+  }
+  .hero__title p {
+    margin-bottom: 2rem;
+    width: 550px;
+    word-wrap: break-word;
+  }
+  .hero__title button {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  .hero-section .features {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    gap: 10rem 10rem;
+    margin-top: 5rem;
+  }
+  .hero-section .feature__detail span:last-child {
+    font-size: 2rem;
+  }
+  .hero__management {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .hero-section .hero__management .management {
+    margin-top: 1.5rem;
+  }
+  .management__title {
+    margin-bottom: 1rem;
+  }
+  .management__title p {
+    width: 600px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .hero-section .banner-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+  }
+  .hero__wraper h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+  }
+
+  .hero__wraper p {
+    text-align: center;
+    margin-bottom: 2rem;
+    word-wrap: break-word;
+  }
+  .hero__title button {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-section .features {
+    gap: 5rem 10rem;
+  }
+  .hero-section .hero__management {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .hero-section .hero__management .management {
+    margin-top: 1.5rem;
+  }
+  .management__title {
+    margin-bottom: 1rem;
+  }
+  .management__title p {
+    width: 550px;
+    text-align: center;
+    word-wrap: break-word;
+  }
 }
