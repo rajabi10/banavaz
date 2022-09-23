@@ -444,7 +444,7 @@ h2 {
 }
 
 @media screen and (min-width: 1024px) {
-  .manage--mobile{
+  .manage--mobile {
     width: 100%;
   }
   .manage--mobile__wraper picture {
@@ -453,7 +453,8 @@ h2 {
   }
   .manage--mobile__title {
     text-align: justify;
-    margin-right: 15rem;
+    margin-right: 25rem;
+    width: 100%;
   }
   .manage--mobile__title h1 {
     margin-bottom: 2rem;
@@ -487,5 +488,127 @@ h2 {
   }
   .manage--mobile__title button {
     font-size: 1.8rem;
+  }
+}
+
+/* cover features */
+.cover--feature {
+  background-color: var(--color-third-homepage);
+  height: 700px;
+}
+
+.cover--wraper {
+  display: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 3rem 0;
+}
+
+.cover--feature h1 {
+  color: var(--color-secondary-dark);
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.cover--feature .cover-feature__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cover--feature .cover-feature__detail img {
+  width: 150px;
+  height: auto;
+}
+
+.cover--feature .cover-feature__detail p {
+  width: 90%;
+  line-height: 1.7;
+  text-align: justify;
+  overflow-wrap: break-word;
+  margin: 0 2rem 0 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .cover--feature {
+    height: 550px;
+  }
+  .cover--wraper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .cover--feature .cover-feature__detail img {
+    width: 250px;
+    height: auto;
+  }
+  .cover--feature .cover-feature__detail p {
+    width: 60%;
+    line-height: 1.7;
+    text-align: justify;
+    overflow-wrap: break-word;
+    margin: 0 2rem 0 2rem;
+    font-size: 1.7rem;
+  }
+  .cover--feature h1 {
+    color: var(--color-secondary-dark);
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .cover--feature {
+    height: 700px;
+  }
+  .cover--wraper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cover--feature .cover-feature__detail img {
+    width: 200px;
+    height: auto;
+  }
+  .cover--feature .cover-feature__detail p {
+    width: 50%;
+    line-height: 1.7;
+    text-align: justify;
+    overflow-wrap: break-word;
+    margin: 0 2rem 0 2rem;
+    font-size: 1.7rem;
+  }
+  .cover--feature h1 {
+    color: var(--color-secondary-dark);
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .cover--feature {
+    height: 750px;
+  }
+  .cover--feature .cover-feature__detail img {
+    width: 240px;
+    height: auto;
+  }
+  .cover--feature .cover-feature__detail p {
+    width: 60%;
+    line-height: 1.7;
+    text-align: justify;
+    overflow-wrap: break-word;
+    margin: 0 2rem 0 2rem;
+  }
+  .cover--feature h1 {
+    color: var(--color-secondary-dark);
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
   }
 }
