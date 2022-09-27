@@ -18,12 +18,39 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <header class="main-header">
+      <nav class="nav container">
+        <a href="#">
+          <img src="./assets/images/Logo.svg" alt="" />
+        </a>
+        <div class="nav__toggler">
+          <div class="bar bar-one"></div>
+          <div class="bar bar-two"></div>
+          <div class="bar bar-three"></div>
+        </div>
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="#">خانه</a></li>
+          <li class="nav__item"><a href="#">فروشگاه</a></li>
+          <li class="nav__item"><a href="#">درباره ما</a></li>
+          <li class="nav__item cta">
+            <a href="#" class="btn btn--block btn--primary__blue__dark"
+              >ورود به داشبورد</a
+            >
+          </li>
+          <li class="nav__item cta">
+            <a href="#" class="btn btn--secondary__white btn--block"
+              >دانلود اپلیکیشن</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <section class="hero-section">
       <div class="hero__wraper container">
         <picture>
           <img src="./assets/images/Group-124.png" alt="" class="banner-img" />
         </picture>
-        <div class="hero__title">
+        <div class="hero__title block">
           <h1>خیالت از خونه راحت!</h1>
           <p>
             بانواز واژه‌ای کردی به معنای باخبر ساختن با صدای بلند است. درست مثل
@@ -113,7 +140,7 @@
         </div>
       </div>
     </section>
-    <section class="child--lock">
+    <section class="child--lock block" data-aos="fade-right" data-aos-duration="1000">
       <div class="lock__wraper container">
         <picture>
           <img src="./assets/images/child.png" alt="" class="child__img" />
@@ -125,7 +152,7 @@
         </div>
       </div>
     </section>
-    <section class="manage--mobile">
+    <section class="manage--mobile block" data-aos="fade-left" data-aos-duration="1000">
       <div class="manage--mobile__wraper container">
         <picture>
           <img src="./assets/images/mobile.png" alt="" class="mobile-img" />
@@ -142,8 +169,8 @@
     </section>
     <section class="cover--feature">
       <h1>قابلیت‌های ویژه بانواز</h1>
-      <div class="cover--wraper container">
-        <div class="cover-feature__detail">
+      <div class="cover--wraper container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="cover-feature__detail" >
           <picture>
             <img src="./assets/images/Cover.png" alt="" />
           </picture>
@@ -182,7 +209,7 @@
       </div>
     </section>
     <section class="social--medias">
-      <div class="social--media__wraper container">
+      <div class="social--media__wraper container"  data-aos="zoom-in-up" data-aos-duration="1000">
         <div class="social--media__title">
           <h1>رفقای بانواز!</h1>
           <p>ما افتخار همکاری با بیش از ده‌ها شرکت رو در بانواز داریم.</p>
@@ -305,5 +332,11 @@
         </div>
       </div>
     </section>
+
+    <script src="./JS/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
